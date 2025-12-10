@@ -3,81 +3,92 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Josh Nayak — ML, CV & Mechatronics Portfolio</title>
+    <title>Josh Nayak — ML & Computer Vision Engineer</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header class="hero">
-    <h1>Josh Nayak</h1>
-    <p>Machine Learning • Computer Vision • Mechatronics & Controls</p>
+<nav class="navbar">
+    <div class="logo">JN</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="https://github.com/USERNAME" target="_blank">GitHub</a></li>
+    </ul>
+</nav>
 
-    <a href="projects.html" class="btn">View Projects</a>
-    <a href="https://github.com/USERNAME" class="btn-secondary" target="_blank">GitHub</a>
+<header class="hero-section">
+    <div class="hero-left">
+        <h1 class="hero-title">Josh Nayak</h1>
+        <p class="hero-subtitle">Machine Learning • Computer Vision • Robotics & Mechatronics</p>
+
+        <div class="hero-buttons">
+            <a href="projects.html" class="btn-primary">View My Work</a>
+            <a href="resume.pdf" class="btn-secondary" download>Download Resume</a>
+        </div>
+    </div>
+
+    <div class="hero-photo">
+        <div class="photo-circle"></div>
+    </div>
 </header>
 
-
-<section class="about">
+<section class="section about">
     <h2>About Me</h2>
     <p>
-        I am a Machine Learning, Computer Vision, and Mechatronics engineer with hands-on
-        experience building ADAS perception systems, embedded vision applications, robotic
-        controls, and full ML pipelines—from data collection to deployment.
-    </p>
-    <p>
-        My work spans classical CV, deep learning, 3D perception, ROS, sensor fusion, 
-        and real-time systems.
+        I am an ML, Computer Vision, and Mechatronics engineer with experience building ADAS perception systems,
+        object detection pipelines, embedded vision applications, and robotic control systems. I work across the
+        full lifecycle — data collection, preprocessing, model training, deployment, and real-time integration.
     </p>
 </section>
 
-
-<section class="skills">
+<section class="section skills">
     <h2>Technical Skills</h2>
 
     <div class="skills-grid">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">C++</div>
-        <div class="skill-card">OpenCV</div>
-        <div class="skill-card">PyTorch / TensorFlow</div>
-        <div class="skill-card">Deep Learning</div>
-        <div class="skill-card">Computer Vision</div>
-        <div class="skill-card">Machine Learning</div>
-        <div class="skill-card">ROS / Robotics</div>
-        <div class="skill-card">Mechatronics & Controls</div>
-        <div class="skill-card">Linux / Git</div>
+        <span class="skill">Python</span>
+        <span class="skill">C++</span>
+        <span class="skill">OpenCV</span>
+        <span class="skill">PyTorch</span>
+        <span class="skill">TensorFlow</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Deep Learning</span>
+        <span class="skill">SLAM</span>
+        <span class="skill">ROS / Robotics</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Git</span>
+        <span class="skill">CUDA</span>
     </div>
 </section>
 
+<section class="section featured">
+    <h2>Featured Projects</h2>
 
-<section class="highlight">
-    <h2>Featured Work</h2>
+    <div class="project-cards">
 
-    <div class="highlight-grid">
-
-        <div class="highlight-card">
-            <h3>ADAS Lane Detection System</h3>
-            <p>Real-time lane detection using OpenCV + ML, deployed on embedded hardware.</p>
-            <a href="projects.html#lane" class="btn-sm">View Project</a>
+        <div class="project-card">
+            <h3>ADAS Lane Detection</h3>
+            <p>Real-time lane detection pipeline using OpenCV + ML, running on embedded hardware at 30 FPS.</p>
+            <a href="projects.html#lane" class="card-btn">Learn More →</a>
         </div>
 
-        <div class="highlight-card">
-            <h3>Object Detection App</h3>
-            <p>YOLOv8–based object detection with custom dataset and live inference.</p>
-            <a href="projects.html#detection" class="btn-sm">View Project</a>
+        <div class="project-card">
+            <h3>YOLOv8 Object Detection</h3>
+            <p>Custom trained detection model with 5K dataset, ONNX deployment, and live inference.</p>
+            <a href="projects.html#detection" class="card-btn">Learn More →</a>
         </div>
 
-        <div class="highlight-card">
-            <h3>Robotic Arm Controller</h3>
-            <p>Inverse kinematics, PID motion control, and trajectory planning.</p>
-            <a href="projects.html#robotarm" class="btn-sm">View Project</a>
+        <div class="project-card">
+            <h3>Robotic Arm Control System</h3>
+            <p>PID-based joint control + inverse kinematics + trajectory planning.</p>
+            <a href="projects.html#robotarm" class="card-btn">Learn More →</a>
         </div>
 
     </div>
 </section>
-
 
 <footer>
-    <p>© 2025 — Josh Nayak</p>
+    <p>© 2025 — Josh Nayak | ML & Computer Vision Engineer</p>
 </footer>
 
 </body>

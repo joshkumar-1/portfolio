@@ -8,58 +8,60 @@
 </head>
 <body>
 
-<header class="sub-hero">
-    <h1>Projects</h1>
-    <a href="index.html" class="btn-secondary">← Back to Home</a>
+<nav class="navbar">
+    <div class="logo">JN</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<header class="sub-header">
+    <h1>Projects Portfolio</h1>
 </header>
 
-
-<section id="lane" class="project">
+<section id="lane" class="section project-section">
     <h2>ADAS Lane Detection System</h2>
     <p>
-        A real-time lane detection pipeline built using OpenCV, advanced filtering,
-        sliding window, and perspective transforms. Designed to run at 30 FPS on
-        embedded systems for ADAS applications.
+        A real-time lane detection pipeline using OpenCV and classical computer vision techniques.
+        Supports camera calibration, thresholding, sliding window search, and polynomial lane fitting.
     </p>
-    <ul>
-        <li>OpenCV preprocessing + edge detection</li>
-        <li>Polynomial lane fitting</li>
-        <li>Frame-by-frame tracking</li>
-        <li>Calibrated camera pipeline</li>
+
+    <ul class="project-details">
+        <li>Performed camera calibration for distortion correction</li>
+        <li>Used gradient + color thresholding for lane isolation</li>
+        <li>Applied perspective transforms for bird’s-eye view</li>
+        <li>Tracked lanes across frames using smoothing</li>
     </ul>
 </section>
 
-
-<section id="detection" class="project">
-    <h2>Object Detection Application</h2>
+<section id="detection" class="section project-section">
+    <h2>YOLOv8 Object Detection</h2>
     <p>
-        A YOLOv8-based detection model trained on a custom dataset. Includes
-        annotation tools, dataset cleaning, model training, and deployment
-        using ONNX Runtime.
+        Implemented a custom object detection pipeline using YOLOv8, including dataset collection,
+        annotation, training, validation, optimization, and ONNX runtime deployment.
     </p>
-    <ul>
-        <li>Custom dataset of 5K+ annotated images</li>
-        <li>Training using PyTorch Lightning</li>
-        <li>ONNX model export for edge devices</li>
-        <li>Live real-time camera inference</li>
+    <ul class="project-details">
+        <li>Created and cleaned a 5,000+ image dataset</li>
+        <li>Trained YOLOv8 (S/M) on GPU with augmentation</li>
+        <li>Exported model to ONNX for edge inference</li>
+        <li>Built a Python app for real-time detection</li>
     </ul>
 </section>
 
-
-<section id="robotarm" class="project">
-    <h2>Robotic Arm Control System</h2>
+<section id="robotarm" class="section project-section">
+    <h2>Robotic Arm Controller</h2>
     <p>
-        Designed a robotic arm controller using inverse kinematics and PID-based joint
-        control. Implemented trajectory planning and safety limits.
+        Designed a 6-DOF robotic arm motion controller using inverse kinematics, PID control, and
+        real-time safety constraints. Implemented trajectory planning and limit detection.
     </p>
-    <ul>
-        <li>DH parameters & IK solver</li>
-        <li>PID tuning for accurate motion</li>
-        <li>Real-time control loop</li>
-        <li>Collision and limit detection</li>
+    <ul class="project-details">
+        <li>Built IK solver with DH parameters</li>
+        <li>Tuned PID controllers for each joint</li>
+        <li>Designed smooth trajectory generation</li>
+        <li>Implemented collision & limit detection</li>
     </ul>
 </section>
-
 
 <footer>
     <p>© 2025 — Josh Nayak</p>
