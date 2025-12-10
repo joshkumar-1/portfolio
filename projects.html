@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects — Josh Nayak</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -13,59 +14,45 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
     </ul>
 </nav>
 
-<header class="sub-header">
-    <h1>Projects Portfolio</h1>
-</header>
-
-<section id="lane" class="section project-section">
-    <h2>ADAS Lane Detection System</h2>
-    <p>
-        A real-time lane detection pipeline using OpenCV and classical computer vision techniques.
-        Supports camera calibration, thresholding, sliding window search, and polynomial lane fitting.
-    </p>
-
-    <ul class="project-details">
-        <li>Performed camera calibration for distortion correction</li>
-        <li>Used gradient + color thresholding for lane isolation</li>
-        <li>Applied perspective transforms for bird’s-eye view</li>
-        <li>Tracked lanes across frames using smoothing</li>
-    </ul>
-</section>
-
-<section id="detection" class="section project-section">
-    <h2>YOLOv8 Object Detection</h2>
-    <p>
-        Implemented a custom object detection pipeline using YOLOv8, including dataset collection,
-        annotation, training, validation, optimization, and ONNX runtime deployment.
-    </p>
-    <ul class="project-details">
-        <li>Created and cleaned a 5,000+ image dataset</li>
-        <li>Trained YOLOv8 (S/M) on GPU with augmentation</li>
-        <li>Exported model to ONNX for edge inference</li>
-        <li>Built a Python app for real-time detection</li>
-    </ul>
-</section>
-
-<section id="robotarm" class="section project-section">
-    <h2>Robotic Arm Controller</h2>
-    <p>
-        Designed a 6-DOF robotic arm motion controller using inverse kinematics, PID control, and
-        real-time safety constraints. Implemented trajectory planning and limit detection.
-    </p>
-    <ul class="project-details">
-        <li>Built IK solver with DH parameters</li>
-        <li>Tuned PID controllers for each joint</li>
-        <li>Designed smooth trajectory generation</li>
-        <li>Implemented collision & limit detection</li>
-    </ul>
+<section class="section projects" data-sr>
+    <h2>Projects</h2>
+    <div class="project-cards">
+        <div class="project-card" id="lane">
+            <img src="images/adas-demo.gif" alt="ADAS Lane Detection" class="project-gif">
+            <h3>ADAS Lane Detection</h3>
+            <p>Real-time lane detection using OpenCV, ML models, deployed on embedded hardware.</p>
+        </div>
+        <div class="project-card" id="detection">
+            <img src="images/detection-app.gif" alt="YOLOv8 Object Detection" class="project-gif">
+            <h3>YOLOv8 Object Detection</h3>
+            <p>Custom YOLOv8 model training, deployment with ONNX runtime, real-time inference.</p>
+        </div>
+        <div class="project-card" id="robotarm">
+            <img src="images/robot-arm.gif" alt="Robotic Arm Control" class="project-gif">
+            <h3>Robotic Arm Control</h3>
+            <p>PID control, trajectory planning, inverse kinematics for a 6-DOF robotic arm.</p>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <p>© 2025 — Josh Nayak</p>
+    <p>© 2025 — Josh Nayak | ML & Computer Vision Engineer</p>
 </footer>
+
+<script>
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+ScrollReveal().reveal('[data-sr]', {distance:'50px', duration:1000, easing:'ease-in-out', origin:'bottom', interval:200});
+</script>
 
 </body>
 </html>
