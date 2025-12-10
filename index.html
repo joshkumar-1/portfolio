@@ -51,12 +51,20 @@
         <span class="skill">OpenCV</span>
         <span class="skill">PyTorch</span>
         <span class="skill">TensorFlow</span>
+        <span class="skill">Docker</span>
+        <span class="skill">AWS</span>
+        <span class="skill">Tableau</span>
+        <span class="skill">Domo</span>
+        <span class="skill">ETL</span>
+        <span class="skill">PowerBI</span>
+        <span class="skill">Kubernetes</span>
         <span class="skill">Machine Learning</span>
         <span class="skill">Deep Learning</span>
         <span class="skill">SLAM</span>
+        <span class="skill">ROS2</span>
         <span class="skill">ROS / Robotics</span>
         <span class="skill">Linux</span>
-        <span class="skill">CUDA</span>
+        
     </div>
 </section>
 
@@ -85,34 +93,24 @@
     </div>
 </section>
 
-<!-- Contact -->
-<form id="contact-form" action="https://formspree.io/f/mrbnyjyv" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn-primary">Send Message</button>
-</form>
-<script>
-document.getElementById('contact-form').addEventListener('submit', function(e){
-    e.preventDefault();
-    const form = e.target;
-    fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-    }).then(response => {
-        if(response.ok){
-            document.getElementById('success-msg').style.display = 'block';
-            form.reset();
-        } else { alert('Oops! There was a problem.'); }
-    });
-});
-</script>
+<!-- Contact Section -->
+<section class="section contact" id="contact" data-sr>
+    <h2>Contact Me</h2>
+    <p style="text-align:center; margin-bottom:20px;">Fill out the form below or download my resume to get in touch!</p>
+    
+    <!-- Contact Form -->
+    <form id="contact-form" action="https://formspree.io/f/mrbnyjyv" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
 
-<p id="success-msg" style="display:none; color:green; text-align:center; margin-top:10px;">
-    Thanks! Your message has been sent.
-</p>
-
+    <!-- Success Message -->
+    <p id="success-msg" style="display:none; color:green; text-align:center; margin-top:10px;">
+        Thanks! Your message has been sent.
+    </p>
+</section>
 
 <!-- Footer -->
 <footer>
@@ -121,7 +119,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
 
 <!-- Scripts -->
 <script>
-// Dark Mode Toggle
 const toggle = document.getElementById('darkModeToggle');
 toggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
@@ -135,6 +132,22 @@ ScrollReveal().reveal('[data-sr]', {
     easing: 'ease-in-out',
     origin: 'bottom',
     interval: 200
+});
+
+// Formspree submission
+document.getElementById('contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const form = e.target;
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if(response.ok){
+            document.getElementById('success-msg').style.display = 'block';
+            form.reset();
+        } else { alert('Oops! There was a problem sending your message.'); }
+    });
 });
 </script>
 

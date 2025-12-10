@@ -1,11 +1,31 @@
-<!-- Projects Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Josh Nayak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">JN</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+    </ul>
+</nav>
+
 <section class="section projects" data-sr>
     <h2>My Projects</h2>
     <p style="text-align:center; margin-bottom:30px;">Some of my key ML & Computer Vision projects, including live demos and GIFs.</p>
 
     <div class="project-cards">
 
-        <!-- Project 1 -->
         <div class="project-card" id="lane">
             <div class="project-img-wrapper">
                 <img src="images/adas-demo.gif" alt="ADAS Lane Detection" class="project-gif">
@@ -18,7 +38,6 @@
             </div>
         </div>
 
-        <!-- Project 2 -->
         <div class="project-card" id="detection">
             <div class="project-img-wrapper">
                 <img src="images/detection-app.gif" alt="YOLOv8 Object Detection" class="project-gif">
@@ -31,7 +50,6 @@
             </div>
         </div>
 
-        <!-- Project 3 -->
         <div class="project-card" id="robotarm">
             <div class="project-img-wrapper">
                 <img src="images/robot-arm.gif" alt="Robotic Arm Control" class="project-gif">
@@ -47,13 +65,18 @@
     </div>
 </section>
 
-<!-- ScrollReveal Script -->
+<footer>
+    <p>© 2025 — Josh Nayak | ML & Computer Vision Engineer</p>
+</footer>
+
 <script>
-ScrollReveal().reveal('[data-sr]', {
-    distance: '50px',
-    duration: 1000,
-    easing: 'ease-in-out',
-    origin: 'bottom',
-    interval: 200
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
+ScrollReveal().reveal('[data-sr]', {distance:'50px', duration:1000, easing:'ease-in-out', origin:'bottom', interval:200});
 </script>
+
+</body>
+</html>
