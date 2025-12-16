@@ -18,58 +18,58 @@ body.dark-mode .navbar { background:#1e1e1e; }
 /* -------------------------
    HERO SECTION
 ------------------------- */
-.hero-section { display:flex; justify-content:space-between; align-items:center; padding:70px 30px; max-width:1200px; margin:auto;}
-.hero-left h1 { font-size:40px; margin-bottom:10px; }
-.hero-left p.hero-sub { font-size:17px; margin-bottom:10px; font-weight:600; color:#555; }
+.hero-section { display:flex; justify-content:space-between; align-items:center; padding:50px 20px; max-width:1000px; margin:auto;}
+.hero-left h1 { font-size:36px; margin-bottom:8px; }
+.hero-left p.hero-sub { font-size:15px; margin-bottom:10px; font-weight:600; color:#555; }
 body.dark-mode .hero-sub { color:#bbb; }
-.hero-buttons { margin-top:20px; }
-.profile-photo { width:140px; height:140px; border-radius:50%; border:3px solid #0051ff; }
+.hero-buttons { margin-top:15px; }
+.profile-photo { width:100px; height:100px; border-radius:50%; border:2px solid #0051ff; }
 
 /* -------------------------
    BUTTONS
 ------------------------- */
-.btn-primary, .card-btn { background:#0051ff; color:#fff; padding:10px 18px; border-radius:6px; font-weight:700; text-decoration:none; display:inline-block; }
+.btn-primary, .card-btn { background:#0051ff; color:#fff; padding:8px 16px; border-radius:6px; font-weight:700; text-decoration:none; display:inline-block; }
 .btn-primary:hover, .card-btn:hover { background:#003db3; }
-.btn-secondary { border:2px solid #0051ff; color:#0051ff; padding:10px 18px; border-radius:6px; text-decoration:none; background:transparent;}
+.btn-secondary { border:2px solid #0051ff; color:#0051ff; padding:8px 16px; border-radius:6px; text-decoration:none; background:transparent;}
 .btn-secondary:hover { background:#0051ff; color:#fff; }
 
 /* -------------------------
    SECTIONS
 ------------------------- */
-.section { padding:50px 30px; max-width:1100px; margin:auto; }
-.section h2 { font-size:28px; letter-spacing:0.5px; font-weight:700; color:#222; text-align:center; margin-bottom:25px; }
+.section { padding:40px 20px; max-width:1100px; margin:auto; }
+.section h2 { font-size:26px; letter-spacing:0.5px; font-weight:700; color:#222; text-align:center; margin-bottom:20px; }
 body.dark-mode h2 { color:#e0e0e0; }
-.about p { font-size:16px; line-height:1.7; text-align:center; max-width:900px; margin:auto; }
+.about p { font-size:15px; line-height:1.6; text-align:center; max-width:850px; margin:auto; }
 
 /* -------------------------
    SKILLS
 ------------------------- */
-.skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:12px; }
-.skill { background:#fff; padding:12px; border-radius:10px; text-align:center; font-weight:700; box-shadow:0 4px 10px rgba(0,0,0,0.12);}
+.skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; }
+.skill { background:#fff; padding:10px; border-radius:10px; text-align:center; font-weight:700; box-shadow:0 4px 10px rgba(0,0,0,0.12);}
 body.dark-mode .skill { background:#1e1e1e; box-shadow:0 4px 10px rgba(255,255,255,0.05);}
 
 /* -------------------------
    PROJECTS
 ------------------------- */
-.project-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
-.project-card { background:#fff; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15); overflow:hidden; text-align:center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.project-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; justify-items:center;}
+.project-card { display:flex; flex-direction:column; align-items:center; background:#fff; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15); overflow:hidden; text-align:center; transition: transform 0.3s ease, box-shadow 0.3s ease; padding:12px; }
 body.dark-mode .project-card { background:#1e1e1e; box-shadow:0 8px 25px rgba(255,255,255,0.05); }
 .project-card:hover { transform:translateY(-6px); box-shadow:0 12px 30px rgba(0,0,0,0.25); }
-.project-card h3 { font-size:1.2rem; margin:12px 20px 8px; font-weight:600; }
-.project-card p { margin:0 20px 15px; font-size:0.95rem; color:#555; }
+.project-card h3 { font-size:1.15rem; margin:10px 0 6px; font-weight:600; }
+.project-card p { margin:0 0 12px; font-size:0.9rem; color:#555; }
 body.dark-mode .project-card p { color:#ccc; }
-.project-gif { width:100%; max-height:200px; object-fit:cover; border-radius:8px; }
+.project-gif { width:100%; max-width:250px; max-height:150px; object-fit:cover; border-radius:8px; }
 
 /* -------------------------
    CONTACT FORM
 ------------------------- */
-.contact-form { max-width:500px; margin:auto; display:flex; flex-direction:column; gap:12px; }
-.contact-form input, .contact-form textarea { padding:12px; border-radius:6px; border:1px solid #ccc; font-size:15px; }
+.contact-form { max-width:450px; margin:auto; display:flex; flex-direction:column; gap:10px; }
+.contact-form input, .contact-form textarea { padding:10px; border-radius:6px; border:1px solid #ccc; font-size:14px; }
 body.dark-mode .contact-form input, body.dark-mode .contact-form textarea { background:#1e1e1e; border:1px solid #555; color:#fff; }
 .contact-form button { cursor:pointer; }
 
 /* -------------------------
    FOOTER
 ------------------------- */
-footer { text-align:center; padding:20px; font-size:14px; background:#f7f7f7; }
+footer { text-align:center; padding:15px; font-size:13px; background:#f7f7f7; }
 body.dark-mode footer { background:#111; color:#aaa; }
