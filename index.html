@@ -1,155 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Nayak — ML & CV Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">JN</div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.pdf" download>Resume</a></li>
-        <li><button id="darkModeToggle">🌙</button></li>
-    </ul>
-</nav>
-
-<!-- Hero Section -->
-<header class="hero-section">
-    <div class="hero-left" data-sr>
-        <h1>Josh Nayak</h1>
-        <p>Machine Learning • Computer Vision • Robotics & Mechatronics</p>
-        <div class="hero-buttons">
-            <a href="projects.html" class="btn-primary">View Projects</a>
-            <a href="resume.pdf" class="btn-secondary" download>Download Resume</a>
-        </div>
-    </div>
-    <div class="hero-photo" data-sr>
-        <img src="images/profile.png" alt="Profile Photo" class="profile-photo">
-    </div>
-</header>
-
-<!-- About Me -->
-<section class="section about" data-sr>
-    <h2>About Me</h2>
-    <p>I am an ML, Computer Vision, and Mechatronics engineer with hands-on experience building ADAS perception systems, object detection pipelines, embedded vision applications, and robotic control systems.Systems & Software Engineer specializing in autonomous systems, robotics controls, sensing, and perception pipelines for mobile robotics and industrial automation platforms. Experienced in system-level design, integration, and validation of autonomous and semi-autonomous systems, including multi-modal perception, motion planning, SLAM, and ML/AI pipelines. Skilled in Modern C++, ROS/ROS2, Python, MATLAB/Simulink, PyTorch, TensorFlow, OpenCV, CAD modeling, and high-performance embedded systems. Adept at collaborating with multidisciplinary teams to ensure robust, scalable, and safe robotic system performance.</p>
+<span class="skill">Embedded Vision</span>
+<span class="skill">Autonomous Systems</span>
+</div>
 </section>
 
-<!-- Skills -->
-<section class="section skills" data-sr>
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <span class="skill">Python</span>
-        <span class="skill">C++</span>
-        <span class="skill">OpenCV</span>
-        <span class="skill">PyTorch</span>
-        <span class="skill">TensorFlow</span>
-        <span class="skill">Docker</span>
-        <span class="skill">AWS</span>
-        <span class="skill">Tableau</span>
-        <span class="skill">Domo</span>
-        <span class="skill">ETL</span>
-        <span class="skill">PowerBI</span>
-        <span class="skill">Kubernetes</span>
-        <span class="skill">Machine Learning</span>
-        <span class="skill">Deep Learning</span>
-        <span class="skill">SLAM</span>
-        <span class="skill">ROS2</span>
-        <span class="skill">ROS / Robotics</span>
-        <span class="skill">Linux</span>
-        
-    </div>
-</section>
 
-<!-- Featured Projects -->
 <section class="section featured" data-sr>
-    <h2>Featured Projects</h2>
-    <div class="project-cards">
-        <div class="project-card">
-            <img src="images/adas-demo.gif" alt="ADAS Lane Detection" class="project-gif">
-            <h3>ADAS Lane Detection</h3>
-            <p>Real-time lane detection pipeline using OpenCV + ML, 30 FPS on embedded hardware.</p>
-            <a href="projects.html#lane" class="card-btn">Learn More →</a>
-        </div>
-        <div class="project-card">
-            <img src="images/detection-app.gif" alt="YOLOv8 Object Detection" class="project-gif">
-            <h3>YOLOv8 Object Detection</h3>
-            <p>Custom trained detection model, ONNX deployment, live camera inference.</p>
-            <a href="projects.html#detection" class="card-btn">Learn More →</a>
-        </div>
-        <div class="project-card">
-            <img src="images/robot-arm.gif" alt="Robotic Arm" class="project-gif">
-            <h3>Robotic Arm Control</h3>
-            <p>PID-based joint control, inverse kinematics, and trajectory planning.</p>
-            <a href="projects.html#robotarm" class="card-btn">Learn More →</a>
-        </div>
-    </div>
+<h2>Featured Projects</h2>
+<div class="project-cards">
+
+
+<div class="project-card">
+<img src="images/adas-demo.gif" alt="ADAS lane detection demo" class="project-gif">
+<h3>ADAS Lane Detection</h3>
+<p>
+• Camera calibration & perspective transform<br>
+• OpenCV-based lane extraction<br>
+• Temporal smoothing for stability<br>
+• Real-time performance (~30 FPS)
+</p>
+<a href="projects.html#lane" class="card-btn">Learn More →</a>
+</div>
+
+
+<div class="project-card">
+<img src="images/detection-app.gif" alt="YOLOv8 object detection demo" class="project-gif">
+<h3>YOLOv8 Object Detection</h3>
+<p>
+• Custom dataset training<br>
+• ONNX optimization<br>
+• Real-time camera inference<br>
+• Edge-ready deployment
+</p>
+<a href="projects.html#detection" class="card-btn">Learn More →</a>
+</div>
+
+
+<div class="project-card">
+<img src="images/robot-arm.gif" alt="Robotic arm control demo" class="project-gif">
+<h3>Robotic Arm Control</h3>
+<p>
+• Forward & inverse kinematics<br>
+• PID-based joint control<br>
+• Trajectory planning<br>
+• Control validation
+</p>
+<a href="projects.html#robotarm" class="card-btn">Learn More →</a>
+</div>
+
+
+</div>
 </section>
 
-<!-- Contact Section -->
+
 <section class="section contact" id="contact" data-sr>
-    <h2>Contact Me</h2>
-    <p style="text-align:center; margin-bottom:20px;">Fill out the form below or download my resume to get in touch!</p>
-    
-    <!-- Contact Form -->
-    <form id="contact-form" action="https://formspree.io/f/mrbnyjyv" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-    </form>
-
-    <!-- Success Message -->
-    <p id="success-msg" style="display:none; color:green; text-align:center; margin-top:10px;">
-        Thanks! Your message has been sent.
-    </p>
+<h2>Contact Me</h2>
+<form action="https://formspree.io/f/mrbnyjyv" method="POST" class="contact-form">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn-primary">Send Message</button>
+</form>
 </section>
 
-<!-- Footer -->
+
 <footer>
-    <p>© 2025 — Josh Nayak | ML & Computer Vision Engineer</p>
+<p>© 2025 — Josh Kumar | Deep Learning & Computer Vision Engineer</p>
 </footer>
 
-<!-- Scripts -->
+
 <script>
 const toggle = document.getElementById('darkModeToggle');
 toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+document.body.classList.toggle('dark-mode');
+toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
-// Scroll Reveal Animations
-ScrollReveal().reveal('[data-sr]', {
-    distance: '50px',
-    duration: 1000,
-    easing: 'ease-in-out',
-    origin: 'bottom',
-    interval: 200
-});
 
-// Formspree submission
-document.getElementById('contact-form').addEventListener('submit', function(e){
-    e.preventDefault();
-    const form = e.target;
-    fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-    }).then(response => {
-        if(response.ok){
-            document.getElementById('success-msg').style.display = 'block';
-            form.reset();
-        } else { alert('Oops! There was a problem sending your message.'); }
-    });
-});
+ScrollReveal().reveal('[data-sr]', { distance: '50px', duration: 1000, origin: 'bottom', interval: 200 });
 </script>
+
 
 </body>
 </html>
