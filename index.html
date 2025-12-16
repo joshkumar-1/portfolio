@@ -1,85 +1,139 @@
 <!DOCTYPE html>
-<span class="skill">Embedded Vision</span>
-<span class="skill">Autonomous Systems</span>
-</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Kumar — Deep Learning & Computer Vision Engineer</title>
+    <meta name="description" content="Deep Learning, Computer Vision, ADAS and Robotics Engineer specializing in perception, ROS2, YOLO, SLAM, and autonomous systems.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">JK</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+    </ul>
+</nav>
+
+<header class="hero-section">
+    <div class="hero-left" data-sr>
+        <h1>Josh Kumar</h1>
+        <p class="hero-sub">Deep Learning & Computer Vision Engineer | ADAS & Robotics | Open to Industry Roles</p>
+        <div class="hero-buttons">
+            <a href="projects.html" class="btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn-secondary" download>Download Resume</a>
+        </div>
+    </div>
+    <div class="hero-photo" data-sr>
+        <img src="images/profile.png" alt="Josh Kumar profile photo" class="profile-photo">
+    </div>
+</header>
+
+<section class="section about" data-sr>
+    <h2>About Me</h2>
+    <p>
+        I am a Deep Learning and Computer Vision Engineer specializing in ADAS perception systems,
+        multi-sensor vision pipelines, and robotic control. Experienced in ROS2-based robotics,
+        SLAM, motion planning, camera calibration, and real-time embedded vision pipelines using C++, Python, OpenCV, PyTorch, and TensorFlow.
+        I collaborate with multidisciplinary teams to deliver safe, efficient, and scalable autonomous systems.
+    </p>
 </section>
 
+<section class="section skills" data-sr>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <span class="skill">Python</span>
+        <span class="skill">C++</span>
+        <span class="skill">PyTorch</span>
+        <span class="skill">TensorFlow</span>
+        <span class="skill">OpenCV</span>
+        <span class="skill">YOLO</span>
+        <span class="skill">CNNs</span>
+        <span class="skill">Deep Learning</span>
+        <span class="skill">ROS2</span>
+        <span class="skill">SLAM</span>
+        <span class="skill">Motion Planning</span>
+        <span class="skill">PID Control</span>
+        <span class="skill">Kinematics</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Docker</span>
+        <span class="skill">ONNX</span>
+        <span class="skill">Embedded Vision</span>
+        <span class="skill">Autonomous Systems</span>
+    </div>
+</section>
 
 <section class="section featured" data-sr>
-<h2>Featured Projects</h2>
-<div class="project-cards">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
 
+        <div class="project-card">
+            <img src="images/adas-demo.gif" alt="ADAS lane detection demo" class="project-gif">
+            <h3>ADAS Lane Detection</h3>
+            <p>
+                • Camera calibration & perspective transform<br>
+                • OpenCV-based lane extraction<br>
+                • Temporal smoothing<br>
+                • Real-time performance (~30 FPS)
+            </p>
+            <a href="projects.html#lane" class="card-btn">Learn More →</a>
+        </div>
 
-<div class="project-card">
-<img src="images/adas-demo.gif" alt="ADAS lane detection demo" class="project-gif">
-<h3>ADAS Lane Detection</h3>
-<p>
-• Camera calibration & perspective transform<br>
-• OpenCV-based lane extraction<br>
-• Temporal smoothing for stability<br>
-• Real-time performance (~30 FPS)
-</p>
-<a href="projects.html#lane" class="card-btn">Learn More →</a>
-</div>
+        <div class="project-card">
+            <img src="images/detection-app.gif" alt="YOLOv8 object detection demo" class="project-gif">
+            <h3>YOLOv8 Object Detection</h3>
+            <p>
+                • Custom YOLOv8 dataset training<br>
+                • ONNX runtime optimization<br>
+                • Live camera inference<br>
+                • Edge-ready deployment
+            </p>
+            <a href="projects.html#detection" class="card-btn">Learn More →</a>
+        </div>
 
+        <div class="project-card">
+            <img src="images/robot-arm.gif" alt="Robotic arm control demo" class="project-gif">
+            <h3>Robotic Arm Control</h3>
+            <p>
+                • Forward & inverse kinematics<br>
+                • PID-based joint control<br>
+                • Trajectory planning<br>
+                • Control validation
+            </p>
+            <a href="projects.html#robotarm" class="card-btn">Learn More →</a>
+        </div>
 
-<div class="project-card">
-<img src="images/detection-app.gif" alt="YOLOv8 object detection demo" class="project-gif">
-<h3>YOLOv8 Object Detection</h3>
-<p>
-• Custom dataset training<br>
-• ONNX optimization<br>
-• Real-time camera inference<br>
-• Edge-ready deployment
-</p>
-<a href="projects.html#detection" class="card-btn">Learn More →</a>
-</div>
-
-
-<div class="project-card">
-<img src="images/robot-arm.gif" alt="Robotic arm control demo" class="project-gif">
-<h3>Robotic Arm Control</h3>
-<p>
-• Forward & inverse kinematics<br>
-• PID-based joint control<br>
-• Trajectory planning<br>
-• Control validation
-</p>
-<a href="projects.html#robotarm" class="card-btn">Learn More →</a>
-</div>
-
-
-</div>
+    </div>
 </section>
-
 
 <section class="section contact" id="contact" data-sr>
-<h2>Contact Me</h2>
-<form action="https://formspree.io/f/mrbnyjyv" method="POST" class="contact-form">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-<button type="submit" class="btn-primary">Send Message</button>
-</form>
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mrbnyjyv" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
 </section>
 
-
 <footer>
-<p>© 2025 — Josh Kumar | Deep Learning & Computer Vision Engineer</p>
+    <p>© 2025 — Josh Kumar | Deep Learning & Computer Vision Engineer</p>
 </footer>
-
 
 <script>
 const toggle = document.getElementById('darkModeToggle');
 toggle.addEventListener('click', () => {
-document.body.classList.toggle('dark-mode');
-toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    document.body.classList.toggle('dark-mode');
+    toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
-
-
 ScrollReveal().reveal('[data-sr]', { distance: '50px', duration: 1000, origin: 'bottom', interval: 200 });
 </script>
-
 
 </body>
 </html>

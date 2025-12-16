@@ -1,76 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects — Josh Kumar</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="https://unpkg.com/scrollreveal"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Josh Kumar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
-
 <nav class="navbar">
-<div class="logo">JK</div>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="index.html#contact">Contact</a></li>
-<li><a href="resume.pdf" download>Resume</a></li>
-<li><button id="darkModeToggle">🌙</button></li>
-</ul>
+    <div class="logo">JK</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+    </ul>
 </nav>
 
-
 <section class="section projects" data-sr>
-<h2>My Projects</h2>
+    <h2>My Projects</h2>
 
+    <div class="project-cards">
 
-<div class="project-cards">
+        <div class="project-card" id="lane">
+            <img src="images/adas-demo.gif" alt="ADAS lane detection demo" class="project-gif">
+            <h3>ADAS Lane Detection</h3>
+            <p>Real-time perception pipeline using OpenCV and classical computer vision techniques.</p>
+            <a href="https://github.com/joshkumar-1" target="_blank" class="card-btn">Code</a>
+        </div>
 
+        <div class="project-card" id="detection">
+            <img src="images/detection-app.gif" alt="YOLOv8 detection demo" class="project-gif">
+            <h3>YOLOv8 Object Detection</h3>
+            <p>Custom-trained YOLOv8 model with ONNX deployment and live inference.</p>
+            <a href="https://github.com/joshkumar-1" target="_blank" class="card-btn">Code</a>
+        </div>
 
-<div class="project-card" id="lane">
-<img src="images/adas-demo.gif" alt="ADAS lane detection demo" class="project-gif">
-<h3>ADAS Lane Detection</h3>
-<p>Real-time perception pipeline using OpenCV and classical computer vision techniques.</p>
-<a href="https://github.com/joshkumar-1" target="_blank" class="card-btn">Code</a>
-</div>
+        <div class="project-card" id="robotarm">
+            <img src="images/robot-arm.gif" alt="Robotic arm control demo" class="project-gif">
+            <h3>Robotic Arm Control</h3>
+            <p>6-DOF robotic arm control using kinematics, PID control, and trajectory planning.</p>
+            <a href="https://github.com/joshkumar-1" target="_blank" class="card-btn">Code</a>
+        </div>
 
-
-<div class="project-card" id="detection">
-<img src="images/detection-app.gif" alt="YOLOv8 detection demo" class="project-gif">
-<h3>YOLOv8 Object Detection</h3>
-<p>Custom-trained YOLOv8 model with ONNX deployment and live inference.</p>
-<a href="https://github.com/joshkumar-1" target="_blank" class="card-btn">Code</a>
-</div>
-
-
-<div class="project-card" id="robotarm">
-<img src="images/robot-arm.gif" alt="Robotic arm control demo" class="project-gif">
-<h3>Robotic Arm Control</h3>
-<p>6-DOF robotic arm control using kinematics, PID control, and trajectory planning.</p>
-<a href="https://github.com/joshkumar-1" target="_blank" class="card-btn">Code</a>
-</div>
-
-
-</div>
+    </div>
 </section>
 
-
 <footer>
-<p>© 2025 — Josh Kumar | Deep Learning & Computer Vision Engineer</p>
+    <p>© 2025 — Josh Kumar | Deep Learning & Computer Vision Engineer</p>
 </footer>
-
 
 <script>
 const toggle = document.getElementById('darkModeToggle');
 toggle.addEventListener('click', () => {
-document.body.classList.toggle('dark-mode');
-toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    document.body.classList.toggle('dark-mode');
+    toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 ScrollReveal().reveal('[data-sr]', { distance: '50px', duration: 1000, origin: 'bottom', interval: 200 });
 </script>
-
 
 </body>
 </html>
